@@ -20,6 +20,7 @@ WORKDIR /usr/local/src/nginx-${NGINX_VERSION}
 RUN ./configure \
     --with-http_ssl_module \
     --with-http_v2_module \
+    --with-http_realip_module \
     --add-module=/usr/local/src/ngx_http_geoip2_module \
     && make \
     && make install
