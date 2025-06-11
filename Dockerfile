@@ -9,7 +9,7 @@ RUN mkdir -p /var/cache/nginx /var/log/nginx
 WORKDIR /usr/local/src
 
 # Download and extract NGINX source
-ENV NGINX_VERSION=1.26.3
+ENV NGINX_VERSION=1.28.0
 RUN wget https://nginx.org/download/nginx-${NGINX_VERSION}.tar.gz && \
     tar -xzvf nginx-${NGINX_VERSION}.tar.gz && \
     rm nginx-${NGINX_VERSION}.tar.gz
